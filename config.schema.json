@@ -1,0 +1,57 @@
+{
+  "pluginAlias": "MiniSefarimWolPlatform",
+  "pluginType": "platform",
+  "singular": true,
+  "headerDisplay": "Configure a Wake-on-LAN switch for one machine. Provide a MAC address, a host/IP, or both.",
+  "footerDisplay": "Using both host and macAddress is recommended. Homebridge can only auto-discover a MAC if the device is visible in the host's neighbor table.",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Accessory Name",
+        "type": "string",
+        "default": "Wake on LAN",
+        "required": true
+      },
+      "host": {
+        "title": "Host or IP Address",
+        "type": "string",
+        "placeholder": "mini-sefarim.local or 192.168.1.223"
+      },
+      "ipAddress": {
+        "title": "IP Address Alias",
+        "type": "string",
+        "placeholder": "Optional alias for host"
+      },
+      "macAddress": {
+        "title": "MAC Address",
+        "type": "string",
+        "placeholder": "1c:83:41:33:84:03"
+      },
+      "broadcastAddress": {
+        "title": "Broadcast Address",
+        "type": "string",
+        "default": "255.255.255.255"
+      },
+      "port": {
+        "title": "UDP Port",
+        "type": "integer",
+        "default": 9
+      },
+      "resetDelayMs": {
+        "title": "Switch Reset Delay (ms)",
+        "type": "integer",
+        "default": 3000
+      }
+    }
+  },
+  "form": [
+    "name",
+    "host",
+    "ipAddress",
+    "macAddress",
+    "broadcastAddress",
+    "port",
+    "resetDelayMs"
+  ]
+}
