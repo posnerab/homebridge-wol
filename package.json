@@ -1,16 +1,16 @@
 {
   "name": "homebridge-wol",
   "displayName": "Homebridge WOL",
-  "version": "0.1.0",
+  "version": "6.0.2",
   "description": "Homebridge plugin that sends Wake-on-LAN magic packets to a configured host or MAC address",
   "main": "index.js",
-  "homepage": "https://github.com/xander/homebridge-wol#readme",
+  "homepage": "https://github.com/posnerab/homebridge-wol#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/xander/homebridge-wol.git"
+    "url": "git+https://github.com/posnerab/homebridge-wol.git"
   },
   "bugs": {
-    "url": "https://github.com/xander/homebridge-wol/issues"
+    "url": "https://github.com/posnerab/homebridge-wol/issues"
   },
   "engines": {
     "homebridge": "^1.8.0",
